@@ -1,18 +1,11 @@
 /*body*/
 body{
-	h1{
-		text-align: center;
-	}
-	p{
-		text-align: center;
-	}
-
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
 	font-family: Arial, Helvetica, sans-serif;
-	 background-color:white;
+	background-color:white;
 	 /*table*/
 table{
 	font-family: arial, sans-serif;
@@ -24,41 +17,50 @@ table{
     text-align: left;
     border:  #555555 solid 2px ;
 	}
+
 	td{
 		font-size: 12px;
 		color: black;
 		background-color:  lightblue;
 		color: white;
-
+		 padding: 2%;
 		a{
 			text-decoration: none;
 			color: black;
 		}
 	}
+
 	th {
 		background-color: #008CBA;
 		color: red;
 		color: #fff;
     	font-size: 14px;
 
-
 		a{
 			color: white;
 			text-decoration: none;
-
 		}
 	}
-tr:nth-child(even) {
-    background-color: #dddddd;
-}
+
+	tr:nth-child(even) {
+		background-color: #dddddd;
+	}
+
+	h1{
+		text-align: center;
+	}
+
+	p{
+		text-align: center;
+	}
 }
 /*footer*/
 footer{
 	display: flex;
-    justify-content: center;
-    
+    justify-content: center; 
     bottom: 0;
     width: 100%;
+		
 		ul {
 	    list-style-type: none;
 	    margin: 0;
@@ -97,49 +99,46 @@ form{
 		margin: 1%;
 	}
 }
-/*header*/
-header{
-	background-color: #e7e7e7;
-	margin-bottom:5%;
-	section{
-		text-align: center;
+	/*header*/
+	header{
 		background-color: #e7e7e7;
+		margin-bottom:5%;
+		section{
+			text-align: center;
+			background-color: #e7e7e7;
+		}
+		
 	}
-	
-}
 
-.mon_formulaire{
-	display:none;
-}
-input{
-	border-radius: 10000em;
-    border: solid blue;
-    text-align: center;
-}
-
-nav {
-	display: flex;
+	.mon_formulaire{
+		display:none;
+	}
+	input{
+		border-radius: 10000em;
+	    border: solid blue;
 	    text-align: center;
-	    color: black;
-	a{
-		text-decoration: none;
-	    color: black;
-	  
 	}
-}
 
-button {
-    background-color:  cornflowerblue;
-    border: none;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 25px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
+	nav {
+		display: flex;
+		text-align: center;
+		color: black;
 
-header{
+		a{
+			text-decoration: none;
+		    color: black;  
+		}
+	}
 
-}
+	button {
+	    background-color:  cornflowerblue;
+	    border: none;
+	    color: white;
+	    text-align: center;
+	    text-decoration: none;
+	    display: inline-block;
+	    font-size: 25px;
+	    margin: 4px 2px;
+	    cursor: pointer;
+	}
+
