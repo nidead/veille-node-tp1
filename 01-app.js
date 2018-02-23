@@ -99,12 +99,15 @@ app.get('/vider', (req, res) => {
 
 app.post('/rechercher', (req, res) => {
 
-	console.log("test" + req.body);
-	var cursor = db.collection('adresse').find({$or : [{nom:req.body.recherche},{prenom:req.body.recherche}]}).toArray(function(err, resultat){
+	console.log("test = " + req.body.recherche);
+	var cursor = db.collection('adresse')
+		.find({$or : [
+						{"Nom":req.body.recherche},
+						{"Prenom":req.body.recherche}
+					]
+				}).toArray(function(err, resultat){
 		if (err) return console.log(err)
 	 	console.log('util = ' + util.inspect(resultat));
-
-
 		res.render('adresses.ejs', {adresses: resultat, ordre:"asc"})
 	})
  })
